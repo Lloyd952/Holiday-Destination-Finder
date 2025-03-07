@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Holiday Destination Finder - Explore the World</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Holiday Finder</h1>
+        </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#map-section">Explore</a></li>
+          <li><a href="#city-info">City Info</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h2>Your Next Adventure Awaits</h2>
+        <p>Discover the perfect holiday destination with ease.</p>
+        <form id="search-form">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Enter a city or destination"
+            required
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="destinations-section">
+      <h2>Popular Destinations</h2>
+      <div class="destinations-grid">
+        <div class="destination-card" id="paris">
+          <img src="assets/images/paris.jpg" alt="Paris" />
+          <h3>Paris</h3>
+          <p>City of Lights</p>
+        </div>
+        <div class="destination-card" id="tokyo">
+          <img src="assets/images/tokyo.jpg" alt="Tokyo" />
+          <h3>Tokyo</h3>
+          <p>Blend of Tradition & Modernity</p>
+        </div>
+        <div class="destination-card" id="newyork">
+          <img src="assets/images/new-york.jpg" alt="New York" />
+          <h3>New York</h3>
+          <p>The Big Apple</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-section">
+      <h2>Explore Your Destination</h2>
+      <div id="map"></div>
+      <div id="filter-buttons">
+        <button id="filter-attractions">
+          <i class="fas fa-landmark"></i> Attractions
+        </button>
+        <button id="filter-accommodations">
+          <i class="fas fa-hotel"></i> Accommodations
+        </button>
+        <button id="filter-restaurants">
+          <i class="fas fa-utensils"></i> Restaurants
+        </button>
+      </div>
+    </section>
+
+    <!-- City Information Section -->
+    <section id="city-info" class="city-info-section">
+      <h2>Destination Details</h2>
+      <div class="city-info-container">
+        <div class="city-image">
+          <img
+            id="city-image"
+            src="assets/images/default-city.jpg"
+            alt="City"
+          />
+        </div>
+        <div class="city-details">
+          <h3 id="city-name">Search for a City</h3>
+          <p id="city-weather">Weather: N/A</p>
+          <p id="city-description">
+            Explore nearby attractions, restaurants, and accommodations using
+            the map filters above.
+          </p>
+          <div class="city-stats">
+            <div class="stat">
+              <i class="fas fa-users"></i>
+              <p>Population: <span id="city-population">N/A</span></p>
+            </div>
+            <div class="stat">
+              <i class="fas fa-globe"></i>
+              <p>Country: <span id="city-country">N/A</span></p>
+            </div>
+            <div class="stat">
+              <i class="fas fa-star"></i>
+              <p>Rating: <span id="city-rating">N/A</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <h2>What Our Users Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>
+            "I found my dream destination through this website! Highly
+            recommended."
+          </p>
+          <p class="author">- Alex</p>
+        </div>
+        <div class="testimonial-card">
+          <p>"Super easy to use and tons of useful info. Love it!"</p>
+          <p class="author">- Sarah</p>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            "The map and filters make it so easy to plan my trips. Great job!"
+          </p>
+          <p class="author">- John</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> Email: contact@holidayfinder.com</p>
+        <p><i class="fas fa-phone"></i> Phone: 02920 123 456</p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Address: 123 St Mary Street, CF10 1AB, Cardiff
+        </p>
+      </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Holiday Destination Finder. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay">
+      <div class="loader"></div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHzeIINFMZVkvK_h50PFsMcOICzttEkfM&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,540 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #cce7ff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("../assets/images/hero-bg.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#search-input {
+  padding: 0.8rem;
+  width: 300px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#search-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+#search-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Featured Destinations */
+.destinations-section {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.destinations-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.destinations-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.destination-card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.destination-card h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.destination-card p {
+  padding: 0.5rem 0;
+  color: #666;
+}
+
+/* Map Section */
+#map-section {
+  margin: 4rem 0;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 2rem 1rem;
+}
+
+#map {
+  height: 400px;
+  background-color: #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#filter-buttons button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#filter-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* City Information Section */
+.city-info-section {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.city-info-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: flex-start; /* Align items to the top */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.city-image img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.city-details {
+  text-align: left;
+  max-width: 600px;
+}
+
+.city-details h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.city-details p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.city-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.city-stats .stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.city-stats .stat i {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 4rem 1rem;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card .author {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.contact-info i {
+  color: #007bff;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-media a {
+  color: #007bff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Loading Overlay */
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #007bff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #007bff;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+  }
+
+  .destinations-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .city-info-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .city-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .city-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .testimonials-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Hero Section */
+  .hero-section h2 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  #search-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #search-input {
+    width: 100%;
+  }
+
+  /* Featured Destinations */
+  .destinations-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destination-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Map Section */
+  #map {
+    height: 300px;
+  }
+
+  #filter-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* City Information Section */
+  .city-info-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .city-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .city-details {
+    text-align: center;
+  }
+
+  .city-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Testimonials Section */
+  .testimonials-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Contact Section */
+  .contact-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
